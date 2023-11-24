@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerador de senha de 5 a 30 digitos!">
+    <meta name="author" content="Gustavo Henrique Ferreira Pires">
+    <title>Gerador De Senha</title>
+    <link rel="shortcut icon" href="components/images/favicon.ico">
+
+    <link  rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <img class="logo" src="./components/images/gerador de senha.png" alt="Gerador de senha logo"/>
+
+    <main class="container-input">
+        <span>Quantidade De Dígitos - <span id="valor"></span>
+        <input id="slider" class="slider" type="range" min="5" max="30" value="18"/>
+
+        <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
+    </main>
+
+    <div id="container-password" onclick="copyPassword()" class="container-password hide">
+        <p class="title">Sua senha gerada foi:</p>
+        <span id="password"class="password"></span>
+        <p class="tooltip">Clique aqui para copiar🔒</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
